@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game using Three.js</title>
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        canvas{
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-</head>
-<body>
-    
-
-
-    <!-- Including three.js file -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r99/three.min.js" integrity="sha256-V0EyXecXmQqSk1QW7iej2g+pzqX02oz78cnceES2ZCs=" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" type="text/css" href="snake.css" />
+  </head>
+  <body>
+    <ul class="static"></ul>
+    <div class="dialog">
+      <div class="menu">
+        <h1>Ready to play!</h1>
+        <p>Start the game</p>
+        <span class="btn" id="yes">Yes</span>
+        <span class="btn" id="no">No</span>
+      </div>
+  
+      <div class="instructions">
+        <h1>Controls</h1>
+        <p>Use the arrow keys to move. You are purple.</p>
+        <p>Spacebar to pause, ESC to main menu</p>
+        <p>Press any key to start the game</p>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js"
+    ></script>
+    <script type="text/javascript" src="snake.js"></script>
+  </body>
 </html>
